@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap 6</title>
+</head>
+<body>
+    <script>
+        const arr = [2,45,6,7,1];
+        let inputUser = Number(prompt("Nhập vào một số"));
+        let check = false;
+        let foundIndex = 0;
+        
+
+        for(let i=0; i<arr.length;i++){
+            if(inputUser===arr[i]){
+                check = true;
+                foundIndex = i;
+                break;
+            }
+        }
+        if(check){
+            alert("Số"+inputUser+"Ở vị trí"+foundIndex)
+        }
+        else{
+            alert("Số"+inputUser+"không tồn tại")
+        }
+    </script>
+</body>
+</html>

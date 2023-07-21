@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap 7</title>
+</head>
+<body>
+    <script>
+        let kichThuocdancuu = [10,100,50,30,200,40];
+        document.write("Kích thước đàn cừu ban đầu của tôi: ",kichThuocdancuu +"<br>");
+        let max = kichThuocdancuu[0];
+        for(let i = 0; i<kichThuocdancuu.length;i++){
+            if(kichThuocdancuu[i]>max){
+                max = kichThuocdancuu[i];
+            }
+        }
+        document.write("Con cừu có kích thước lớn nhất là: " + max + ",hãy cạo nó" +"<br>" )
+        let maxIndex = kichThuocdancuu.indexOf(max);
+        kichThuocdancuu[maxIndex] = 8;
+        document.write("Sau khi cạo lông, đây là đàn của tôi: ",kichThuocdancuu +"<br>")
+        for(let month = 1; month<4; month++){
+            document.write("Month" + month + "<br>");
+            for(let j= 0;j<kichThuocdancuu.length;j++){
+             kichThuocdancuu[j] +=50;
+            }
+            document.write("Đã 1 tháng trôi qua, đàn cừu đã lớn, đây là kích thước của chúng: ",kichThuocdancuu +"<br>");
+            max = kichThuocdancuu[0];
+            for(let k=0; k<kichThuocdancuu.length;k++){
+                if(kichThuocdancuu[k]>max){
+                    max = kichThuocdancuu[k];
+                }
+            }
+            document.write("Bây giờ con cừu lớn nhất là: "+ max +",hãy cạo nó" +"<br>");
+            let maxIndex = kichThuocdancuu.indexOf(max);
+            kichThuocdancuu[maxIndex] = 8;
+            document.write("Kích thước đàn cừu sau khi cạo lông: ",kichThuocdancuu +"<br>");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap 5</title>
+</head>
+<body>
+    <script>
+        let inputUser = prompt("Nhập vào dãy số cách nahu bằng dấu phẩy");
+        let min = Number(inputUser[0]);
+
+        for(let i=0;i<inputUser.length;i++){
+            if(inputUser[i]<min){
+                min = inputUser[i];
+            }
+        }
+        alert("Số nhỏ nhất là" +min)
+    </script>
+</body>
+</html>
